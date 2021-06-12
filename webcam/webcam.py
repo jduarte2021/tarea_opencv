@@ -13,7 +13,7 @@ anterior = 0
 
 while True:
     if not video_capture.isOpened():
-        print('Unable to load camera.')
+        print('No se puede cargar camara.')
         sleep(5)
         pass
 
@@ -24,7 +24,7 @@ while True:
 
     faces = faceCascade.detectMultiScale(
         gray,
-        scaleFactor=1.1,
+        scaleFactor=1.3,
         minNeighbors=5,
         minSize=(30, 30)
     )

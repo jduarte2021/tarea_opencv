@@ -21,11 +21,11 @@ faces = faceCascade.detectMultiScale(
     #flags = cv2.CV_HAAR_SCALE_IMAGE
 )
 
-print("Found {0} faces!".format(len(faces)))
+print("Se encontraron {0} rostros".format(len(faces)))
 
 # Draw a rectangle around the faces
 for (x, y, w, h) in faces:
     cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
-cv2.imshow("Faces found", image)
+cv2.imshow("Rostros encontrados", image)
 cv2.waitKey(0)
